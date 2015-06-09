@@ -1,3 +1,3 @@
-# Under construction.
+# Nothing here.
 
-Please [go here](http://www.rmnl.net) for the time being.
+Just [go here](http://www.rmnl.net) to see what this is about.
