@@ -1,25 +1,243 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-us">
 
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <meta http-equiv="Content-language" content="nl" />
-  <meta http-equiv="refresh" content="5; url=http://www.rmnl.net/">
-  <title>Under construction</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Virtual domain of Roel Meurders a.k.a. RMNL." />
+    <meta name="keywords" content="nothing, to, see" />
+    <meta name="viewport" content="device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="/static/img/wc.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/img/wct.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/img/wc@2x.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/img/wct@2x.png" />
+    <link rel="openid.server" href="https://secure.rmnl.net/openid/" />
+    <link rel="openid2.provider" href="https://secure.rmnl.net/openid/" />
+
+    <title>Roel Meurders a.k.a. RMNL</title>
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'rmnl';
+        src:url('./static/fonts/rmnl.eot');
+        src:url('./static/fonts/rmnl.eot?#iefix') format('embedded-opentype'),
+            url('./static/fonts/rmnl.ttf') format('truetype'),
+            url('./static/fonts/rmnl.woff') format('woff'),
+            url('./static/fonts/rmnl.svg#rmnl') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'droidsans';
+        src:url('./static/fonts/droidsans.woff') format('woff'),
+            url('./static/fonts/droidsans.svg#droidsans') format('svg'),
+            url('./static/fonts/droidsans.eot'),
+            url('./static/fonts/droidsans.eot?#iefix') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        @font-face {
+            font-family: 'rmnl';
+            src: url('./static/fonts/rmnl.svg#rmnl') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'droidsans';
+            src: url('./static/fonts/droidsans.svg#droidsans') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    }
+
+    .rmnl {
+        font-family: 'rmnl';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-feature-settings: "liga";
+        -moz-font-feature-settings: "liga=1";
+        -moz-font-feature-settings: "liga";
+        -ms-font-feature-settings: "liga" 1;
+        -o-font-feature-settings: "liga";
+        font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+    }
+    body {
+        position: relative;
+        background: #fff;
+        color: #222;
+        font-family: "droidsans", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    a {
+        color: #222;
+        text-decoration: none;
+        transition: all .3s linear;
+    }
+    a:hover { color: #f03; }
+    p a { border-bottom: dotted 1px #f03; }
+    p a:hover { border-bottom: solid 1px #f03; }
+    /* Size specific */
+    body { margin: 50px; }
+    h1, h1 a, h1 span, h2, footer { width: 420px; }
+    p { width: 400px; }
+    h1, h1 a, h1 span { height: 420px; }
+    h1 { font-size: 420px; }
+    h1 { margin: 40px auto; }
+    h2, p, footer { margin: 15px auto; }
+    /* header */
+    h1 a {
+        display: block;
+        font-weight: normal;
+        text-align: center;
+        overflow: hidden;
+    }
+    h2 { text-align: center; }
+    p {
+        text-align: center;
+        line-height: 140%;
+    }
+    footer {
+        color: #ccc;
+        font-size: 10px;
+        text-align: center;
+    }
+    footer a {
+        color: #ccc;
+        text-decoration: none;
+    }
+    footer a:hover { color: #999; text-decoration: underline; }
+    footer a span { font-size: 8px; }
+
+    .heartbeat {
+        -webkit-animation: heartbeat 2s linear infinite;
+        -moz-animation: heartbeat 2s linear infinite;
+        -ms-animation: heartbeat 2s linear infinite;
+        -o-animation: heartbeat 2s linear infinite;
+        animation: heartbeat 2s linear infinite;
+    }
+
+    @keyframes "heartbeat" {
+        0% {
+            -o-transform: scale(1.005);
+            -ms-transform: scale(1.005);
+            transform: scale(1.005);
+        }
+        66% {
+            -o-transform: scale(0.99);
+            -ms-transform: scale(0.99);
+            transform: scale(0.99);
+        }
+        100% {
+            -o-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    @-moz-keyframes heartbeat {
+        0% {
+            -moz-transform: scale(1.005);
+        }
+        66% {
+            -moz-transform: scale(0.99);
+        }
+        100% {
+            -moz-transform: scale(1);
+        }
+    }
+    @-webkit-keyframes "heartbeat" {
+        0% {
+            -webkit-transform: scale(1.005);
+        }
+        66% {
+            -webkit-transform: scale(0.99);
+        }
+        100% {
+            -webkit-transform: scale(1);
+        }
+    }
+    @-ms-keyframes "heartbeat" {
+        0% {
+            -ms-transform: scale(1.005);
+        }
+        66% {
+            -ms-transform: scale(0.99);
+        }
+        100% {
+            -ms-transform: scale(1);
+        }
+    }
+
+    @media only screen and (max-width: 639px) {
+        body { margin: 40px; }
+        h1, h1 a, h1 span, h2, footer { width: 360px; }
+        p { width: 340px; }
+        h1, h1 a, h1 span { height: 360px; }
+        h1 { font-size: 360px; }
+        h1 { margin: 35px auto; }
+    }
+
+    @media only screen and (max-width: 419px) {
+        body { margin: 30px; }
+        h1, h1 a, h1 span, h2, footer { width: 300px; }
+        p { width: 280px; }
+        h1, h1 a, h1 span { height: 300px; }
+        h1 { font-size: 300px; }
+        h1 { margin: 30px auto; }
+    }
+
+    @media only screen and (max-width: 359px) {
+        body { margin: 25px; }
+        h1, h1 a, h1 span, h2, footer { width: 270px; }
+        p { width: 260px; }
+        h1, h1 a, h1 span { height: 270px; }
+        h1 { font-size: 270px; }
+        h1 { margin: 25px auto; }
+        h2, p, footer { margin: 10px auto; }
+    }
+
+    </style>
 </head>
 
 <body>
 
-<div id="wrapper">
+    <h1 class="rmnl heartbeat">
+        <a title="Permalink to this page" href="http://www.rmnl.net/">rmnl</a>
+    </h1>
 
-This page is still under construction. Please 
-<a href="http://www.rmnl.net">go here</a> for the time being.
+    <h2>Hello,</h2>
 
-</div><!-- end of wrapper -->
+    <p>
+        Welcome to my domain.
+        I'm Roel Meurders, originally an architect of tangible buildings, now
+        a builder of the virtual world. I co-founded Bits on the Run, which is
+        now part of <a href="http://www.jwplayer.com" title="Home of the best online video player and platform in the world.">JW Player</a>.
+        I keep a low online profile and I'm most regularly, but still only occasionally active on
+        <a href="https://www.twitter.com/rmnl/" title="Link to my Twitter profile">Twitter</a>.
+    </p>
+
+    <footer>
+        © 1995-2015 - Roel Meurders
+    </footer>
+
 
 </body>
 
 </html>
+
