@@ -53,33 +53,8 @@
 
     <title>Roel Meurders a.k.a. RMNL</title>
 
-    <style amp-boilerplate>
-        body {
-            -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            animation:-amp-start 8s steps(1,end) 0s 1 normal both
-        }
-
-        @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-    </style>
-
-    <noscript>
-        <style amp-boilerplate>
-            body {
-                -webkit-animation:none;
-                -moz-animation:none;
-                -ms-animation:none;
-                animation:none
-            }
-        </style>
-    </noscript>
-
-    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
     @font-face {
@@ -189,61 +164,18 @@
     footer a span { font-size: 8px; }
 
     .heartbeat {
-        -webkit-animation: heartbeat 2s linear infinite;
-        -moz-animation: heartbeat 2s linear infinite;
-        -ms-animation: heartbeat 2s linear infinite;
-        -o-animation: heartbeat 2s linear infinite;
         animation: heartbeat 2s linear infinite;
     }
 
-    @keyframes "heartbeat" {
+    @keyframes heartbeat {
         0% {
-            -o-transform: scale(1.005);
-            -ms-transform: scale(1.005);
             transform: scale(1.005);
         }
         66% {
-            -o-transform: scale(0.99);
-            -ms-transform: scale(0.99);
             transform: scale(0.99);
         }
         100% {
-            -o-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
-        }
-    }
-    @-moz-keyframes heartbeat {
-        0% {
-            -moz-transform: scale(1.005);
-        }
-        66% {
-            -moz-transform: scale(0.99);
-        }
-        100% {
-            -moz-transform: scale(1);
-        }
-    }
-    @-webkit-keyframes "heartbeat" {
-        0% {
-            -webkit-transform: scale(1.005);
-        }
-        66% {
-            -webkit-transform: scale(0.99);
-        }
-        100% {
-            -webkit-transform: scale(1);
-        }
-    }
-    @-ms-keyframes "heartbeat" {
-        0% {
-            -ms-transform: scale(1.005);
-        }
-        66% {
-            -ms-transform: scale(0.99);
-        }
-        100% {
-            -ms-transform: scale(1);
         }
     }
 
@@ -298,7 +230,7 @@
     </p>
 
     <footer>
-        © 1995-<script type="text/javascript">document.write((new Date()).getFullYear())</script> - Roel Meurders
+        © 1995-2017 - Roel Meurders
     </footer>
 
 
