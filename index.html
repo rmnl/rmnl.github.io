@@ -1,16 +1,14 @@
 <!doctype html>
 
-<html ⚡>
+<html>
 
 <head>
     <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Virtual domain of Roel Meurders a.k.a. RMNL." />
     <meta name="keywords" content="nothing, to, see" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <!-- Canonical link for AMP -->
     <link rel="canonical" href="http://www.rmnl.net/" />
 
     <!-- Open ID -->
@@ -35,9 +33,9 @@
 
 
     <!-- For Favicon IE10 Metro -->
-    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileColor" content="#222222">
     <meta name="msapplication-TileImage" content="./static/favicon/favicon-144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#222222">
 
     <meta property="og:title" content="Roel Meurders a.k.a. RMNL" />
     <meta property="og:type" content="website" />
@@ -53,10 +51,7 @@
 
     <title>Roel Meurders a.k.a. RMNL</title>
 
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
-    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-    <style amp-custom>
+    <style>
     @font-face {
         font-family: 'rmnl';
         src:url('./static/fonts/rmnl.eot');
@@ -94,7 +89,6 @@
 
     .rmnl {
         font-family: 'rmnl';
-        speak: none;
         font-style: normal;
         font-weight: normal;
         font-variant: normal;
@@ -167,6 +161,25 @@
         animation: heartbeat 2s linear infinite;
     }
 
+    body.dark {
+        background: #222;
+        color: #fff;
+    }
+    body.dark a {
+        color: #fff;
+    }
+    body.dark a:hover {
+        color: #f03;
+    }
+    body.dark footer,
+    body.dark footer a {
+        color: #555;
+    }
+    body.dark footer a:hover {
+        color: #777;
+    }
+
+
     @keyframes heartbeat {
         0% {
             transform: scale(1.005);
@@ -228,9 +241,15 @@
     </p>
 
     <footer>
-        © 1995-2018 - Roel Meurders
+        © 1995-<script>document.write(new Date().getFullYear())</script> - Roel Meurders
     </footer>
 
+    <script>
+        var hour = new Date().getHours();
+        if (hour > 19 || hour < 7) {
+            document.body.className = 'dark';
+        }
+    </script>
 
 </body>
 
