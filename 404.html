@@ -1,89 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en-us">
+<html>
 
 <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Virtual domain of Roel Meurders a.k.a. RMNL." />
     <meta name="keywords" content="nothing, to, see" />
-    <meta name="viewport" content="device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="apple-touch-icon" href=/static/img/wc.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href=/static/img/wct.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href=/static/img/wc@2x.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href=/static/img/wct@2x.png" />
+    <link rel="canonical" href="http://www.rmnl.net/" />
+
+    <!-- Open ID -->
     <link rel="openid.server" href="https://secure.rmnl.net/openid/" />
     <link rel="openid2.provider" href="https://secure.rmnl.net/openid/" />
-    <link rel="image_src" href="http://www.rmnl.ne/static/img/rmnl.png" />
+    <link rel="image_src" href="http://www.rmnl.net/static/img/rmnl.png" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="./static/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="./static/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./static/favicon/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./static/favicon/favicon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./static/favicon/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./static/favicon/favicon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="./static/favicon/favicon-180.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./static/favicon/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="./static/favicon/favicon-57.png">
+    <link rel="icon" href="./static/favicon/favicon-32.png" sizes="32x32">
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="./static/favicon/manifest.json">
+    <link rel="icon" sizes="192x192" href="./static/favicon/favicon-192.png">
+
+
+    <!-- For Favicon IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#222222">
+    <meta name="msapplication-TileImage" content="./static/favicon/favicon-144.png">
+    <meta name="theme-color" content="#222222">
 
     <meta property="og:title" content="Roel Meurders a.k.a. RMNL" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.rmnl.net/" />
-    <meta property="og:image" content="http://www.rmnl.ne/static/img/rmnl.jpg" />
+    <meta property="og:image" content="http://www.rmnl.net/static/img/rmnl.jpg" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@rmnl">
     <meta name="twitter:creator" content="@rmnl">
     <meta name="twitter:title" content="Roel Meurders a.k.a. RMNL">
     <meta name="twitter:description" content="Personal domain page for Roel Meurders">
-    <meta name="twitter:image" content="http://www.rmnl.ne/static/img/rmnl.jpg">
+    <meta name="twitter:image" content="http://www.rmnl.net/static/img/rmnl.jpg">
 
     <title>Roel Meurders a.k.a. RMNL</title>
 
-    <style type="text/css">
-    @font-face {
-        font-family: 'rmnl';
-        src:url('/static/fonts/rmnl.eot');
-        src:url('/static/fonts/rmnl.eot?#iefix') format('embedded-opentype'),
-            url('/static/fonts/rmnl.ttf') format('truetype'),
-            url('/static/fonts/rmnl.woff') format('woff'),
-            url('/static/fonts/rmnl.svg#rmnl') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
+    <style>
     @font-face {
         font-family: 'droidsans';
-        src:url('/static/fonts/droidsans.woff') format('woff'),
-            url('/static/fonts/droidsans.svg#droidsans') format('svg'),
-            url('/static/fonts/droidsans.eot'),
-            url('/static/fonts/droidsans.eot?#iefix') format('embedded-opentype');
+        src:url('./static/fonts/droidsans.woff') format('woff'),
+            url('./static/fonts/droidsans.svg#droidsans') format('svg'),
+            url('./static/fonts/droidsans.eot'),
+            url('./static/fonts/droidsans.eot?#iefix') format('embedded-opentype');
         font-weight: normal;
         font-style: normal;
     }
 
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         @font-face {
-            font-family: 'rmnl';
-            src: url('/static/fonts/rmnl.svg#rmnl') format('svg');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
             font-family: 'droidsans';
-            src: url('/static/fonts/droidsans.svg#droidsans') format('svg');
+            src: url('./static/fonts/droidsans.svg#droidsans') format('svg');
             font-weight: normal;
             font-style: normal;
         }
     }
 
-    .rmnl {
-        font-family: 'rmnl';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-feature-settings: "liga";
-        -moz-font-feature-settings: "liga=1";
-        -moz-font-feature-settings: "liga";
-        -ms-font-feature-settings: "liga" 1;
-        -o-font-feature-settings: "liga";
-        font-feature-settings: "liga";
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
     * {
         margin: 0;
         padding: 0;
@@ -98,21 +85,28 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+    a svg {
+        fill: #222;
+        transition: all .3s linear;
+    }
     a {
         color: #222;
         text-decoration: none;
         transition: all .3s linear;
     }
     a:hover { color: #f03; }
+    a:hover svg { fill: #ff0046; }
     p a { border-bottom: dotted 1px #f03; }
     p a:hover { border-bottom: solid 1px #f03; }
     /* Size specific */
     body { margin: 50px; }
-    h1, h1 a, h1 span { width: 120px; }
-    h2, footer { width: 420px; }
+    h1, h1 a, h1 span, h2, footer { width: 420px; }
     p { width: 400px; }
-    h1, h1 a, h1 span { height: 120px; }
-    h1 { font-size: 120px; }
+    h1, h1 a, h1 span { height: 420px; }
+    h1 {
+        font-size: 420px;
+        line-height: 1;
+    }
     h1 { margin: 40px auto; }
     h2, p, footer { margin: 15px auto; }
     /* header */
@@ -140,61 +134,43 @@
     footer a span { font-size: 8px; }
 
     .heartbeat {
-        -webkit-animation: heartbeat 2s linear infinite;
-        -moz-animation: heartbeat 2s linear infinite;
-        -ms-animation: heartbeat 2s linear infinite;
-        -o-animation: heartbeat 2s linear infinite;
         animation: heartbeat 2s linear infinite;
     }
 
-    @keyframes "heartbeat" {
+    body.dark {
+        background: #222;
+        color: #fff;
+    }
+    body.dark a {
+        color: #fff;
+    }
+    body.dark a:hover {
+        color: #f03;
+    }
+    body.dark a svg {
+        fill: #fff;
+    }
+    body.dark a:hover svg {
+        fill: #f03;
+    }
+    body.dark footer,
+    body.dark footer a {
+        color: #555;
+    }
+    body.dark footer a:hover {
+        color: #777;
+    }
+
+
+    @keyframes heartbeat {
         0% {
-            -o-transform: scale(1.005);
-            -ms-transform: scale(1.005);
             transform: scale(1.005);
         }
         66% {
-            -o-transform: scale(0.99);
-            -ms-transform: scale(0.99);
             transform: scale(0.99);
         }
         100% {
-            -o-transform: scale(1);
-            -ms-transform: scale(1);
             transform: scale(1);
-        }
-    }
-    @-moz-keyframes heartbeat {
-        0% {
-            -moz-transform: scale(1.005);
-        }
-        66% {
-            -moz-transform: scale(0.99);
-        }
-        100% {
-            -moz-transform: scale(1);
-        }
-    }
-    @-webkit-keyframes "heartbeat" {
-        0% {
-            -webkit-transform: scale(1.005);
-        }
-        66% {
-            -webkit-transform: scale(0.99);
-        }
-        100% {
-            -webkit-transform: scale(1);
-        }
-    }
-    @-ms-keyframes "heartbeat" {
-        0% {
-            -ms-transform: scale(1.005);
-        }
-        66% {
-            -ms-transform: scale(0.99);
-        }
-        100% {
-            -ms-transform: scale(1);
         }
     }
 
@@ -232,7 +208,7 @@
 <body>
 
     <h1 class="rmnl heartbeat">
-        <a title="Permalink to this page" href="http://www.rmnl.net/">rmnl</a>
+        <a title="Permalink to this page" href="http://www.rmnl.net/"><svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g id="rmnl"><path d="M250.391,347.732l109.181,3.81c14.547,0.511 26.078,12.447 26.078,27.003c0,14.91 -12.104,27.016 -27.019,27.016c-0.318,0 -0.631,-0.006 -0.945,-0.018l-109.179,-3.812c-32.489,-1.135 -58.237,-27.793 -58.237,-60.296l0,38.065c0,14.918 -12.105,27.017 -27.018,27.017c-14.915,0 -27.019,-12.099 -27.019,-27.017l0,-168.638c0,-22.882 6.294,-45.323 18.202,-64.868c4.905,-8.046 13.65,-12.959 23.074,-12.959c14.916,0 27.022,12.103 27.022,27.017c0,4.957 -1.364,9.819 -3.946,14.054l0,-0.004c-6.745,11.075 -10.315,23.796 -10.315,36.76l0,130.573c0,-33.296 27.034,-60.326 60.342,-60.326c1.587,0 3.173,0.061 4.754,0.191l0.004,0c1.851,0.141 3.709,0.219 5.571,0.219c39.01,0 70.669,-31.655 70.669,-70.657c0,-39.004 -31.659,-70.657 -70.669,-70.657c-10.961,0 -21.771,2.549 -31.577,7.446c-3.747,1.87 -7.882,2.843 -12.074,2.843c-14.914,0 -27.02,-12.104 -27.02,-27.014c0,-10.236 5.789,-19.597 14.949,-24.167c17.304,-8.643 36.379,-13.139 55.722,-13.139c68.837,0 124.709,55.861 124.709,124.688c0,68.828 -55.872,124.688 -124.709,124.688c-3.283,0 -6.562,-0.133 -9.832,-0.393l-0.003,0c-0.163,-0.009 -0.329,-0.014 -0.494,-0.014c-3.476,0 -6.3,2.819 -6.3,6.292c0,3.397 2.686,6.18 6.079,6.297Zm5.608,-346.732c-140.831,0 -254.999,114.167 -254.999,255.002c0,140.828 114.168,254.998 254.999,254.998c140.835,0 255.001,-114.17 255.001,-254.998c0,-140.835 -114.166,-255.002 -255.001,-255.002Z" style="fill-rule:nonzero;"/></g></svg></a>
     </h1>
 
     <h2>404: Page Not Found</h2>
@@ -245,9 +221,15 @@
     </p>
 
     <footer>
-        © 1995-<script type="text/javascript">document.write((new Date()).getFullYear())</script> - Roel Meurders
+        © 1995-<script>document.write(new Date().getFullYear())</script> - Roel Meurders
     </footer>
 
+    <script>
+        var hour = new Date().getHours();
+        if (hour > 19 || hour < 7) {
+            document.body.className = 'dark';
+        }
+    </script>
 
 </body>
 
